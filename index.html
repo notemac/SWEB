@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+</head>
+<body>
+    <div id="map" style="width: 1000px; height: 600px"></div>
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+    <script type="text/javascript">
+        ymaps.ready(init);
+        function init()
+        {
+            let map = new ymaps.Map('map', {
+                center: [53.252797, 34.359869],
+                zoom: 13
+            });
+            let descr = ['Брянск - город воинской славы. Памятник, скульптура',
+                         'Брянск – город трудовой и партизанской славы. Памятник, скульптура',
+                         'Мемориал Великой Отечественной войны. Памятник, скульптура',
+                         'Покровская гора. Достопримечательность',
+                         'Поклонный крест. Памятник, скульптура'
+            ];
+            let place0 = new ymaps.Placemark([53.267095, 34.359663], {balloonContent: descr[0]}, {
+                iconLayout: 'default#image', //Макет иконки. Для опции должно быть установлено значение 'default#image'.
+                iconImageHref: './img/icon0.png',
+                iconImageSize: [40, 35] }),
+
+                place1 = new ymaps.Placemark([53.262222, 34.361826], {balloonContent: descr[1]}, {
+                iconLayout: 'default#image',
+                iconImageHref: './img/icon1.png',
+                iconImageSize: [40, 35]}),
+
+                place2 = new ymaps.Placemark([53.249881, 34.341810], {balloonContent: descr[2]}, {
+                iconLayout: 'default#image',
+                iconImageHref: './img/icon2.png',
+                iconImageSize: [40, 35]}),
+
+                place3 = new ymaps.Placemark([53.245041, 34.373713], {balloonContent: descr[3]}, {
+                iconLayout: 'default#image',
+                iconImageHref: './img/icon3.png',
+                iconImageSize: [40, 50]}),
+
+                place4 = new ymaps.Placemark([53.254549, 34.376923], {balloonContent: descr[4]}, {
+                iconLayout: 'default#image',
+                iconImageHref: './img/icon4.png',
+                iconImageSize: [40, 40]})
+            ;
+            map.geoObjects.add(place0).add(place1).add(place2).add(place3).add(place4);
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Game</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<div class="mainScene">
+    <header>
+        <div id="btn-new-game" class="header-item btn">New game</div>
+        <div id="level" class="header-item">Level: 1</div>
+        <div id="score" class="header-item">Score: 0</div>
+        <div id="btn-next" class="header-item btn">Next</div>
+        <div id="time" class="header-item"></div>
+    </header>
+    
+    <main>
+        <div class="item-card">
+            <svg x="13" y="5" width="180" height="190" class="svg-card"> 
+                <rect class="svg-card-rect" width="130" height="190" rx="9" ry="9"/>
+                <ellipse cx="65" cy="50" rx="30" ry="37" fill="red"/>
+                <path fill="none" stroke="#333333" stroke-width="1" d="M65,87 Q45,107 65,127 T65,167"></path>
+                <text x="15" y="130" font-size="100"></text>
+            </svg>
+        </div>
+        <div class="item-card">
+            <svg x="148" y="5" width="180" height="190" class="svg-card"> 
+                <rect class="svg-card-rect" width="130" height="190" rx="10" ry="10"/>
+                <ellipse cx="65" cy="50" rx="30" ry="37" fill="red"/>
+                <path fill="none" stroke="#333333" stroke-width="1" d="M65,87 Q45,107 65,127 T65,167"></path>
+                <text x="15" y="130" font-size="100"></text>
+            </svg>
+        </div>
+        <div class="item-card">
+            <svg x="283" y="5" width="180" height="190" class="svg-card"> 
+                <rect class="svg-card-rect" width="130" height="190" rx="10" ry="10"/>
+                <ellipse cx="65" cy="50" rx="30" ry="37" fill="red"/>
+                <path fill="none" stroke="#333333" stroke-width="1" d="M65,87 Q45,107 65,127 T65,167"></path>
+                <text x="15" y="130" font-size="100"></text>
+            </svg>
+        </div>
+        <div class="item-card">
+            <svg x="418" y="5" width="180" height="190" class="svg-card"> 
+                <rect class="svg-card-rect" width="130" height="190" rx="10" ry="10"/>
+                <ellipse cx="65" cy="50" rx="30" ry="37" fill="red"/>
+                <path fill="none" stroke="#333333" stroke-width="1" d="M65,87 Q45,107 65,127 T65,167"></path>
+                <text x="15" y="130" font-size="100"></text>
+            </svg>
+        </div>
+        <div class="item-card">
+            <svg x="553" y="5" width="180" height="190" class="svg-card"> 
+                <rect class="svg-card-rect" width="130" height="190" rx="10" ry="10"/>
+                <ellipse cx="65" cy="50" rx="30" ry="37" fill="red"/>
+                <path fill="none" stroke="#333333" stroke-width="1" d="M65,87 Q45,107 65,127 T65,167"></path>
+                <text x="15" y="130" font-size="100"></text>
+            </svg>
+        </div>
+        <div class="item-card">
+            <svg x="688" y="5" width="180" height="190" class="svg-card"> 
+                <rect class="svg-card-rect" class="svg-card-rect" width="130" height="190" rx="10" ry="10"/>
+                <ellipse cx="65" cy="50" rx="30" ry="37" fill="red"/>
+                <path fill="none" stroke="#333333" stroke-width="1" d="M65,87 Q45,107 65,127 T65,167"></path>
+                <text x="15" y="130" font-size="100"></text>
+            </svg>
+        </div>
+        <div class="item-card">
+            <svg x="823" y="5" width="180" height="190" class="svg-card"> 
+                <rect class="svg-card-rect" class="svg-card-rect" width="130" height="190" rx="10" ry="10"/>
+                <ellipse cx="65" cy="50" rx="30" ry="37" fill="red"/>
+                <path fill="none" stroke="#333333" stroke-width="1" d="M65,87 Q45,107 65,127 T65,167"></path>
+                <text x="15" y="130" font-size="100"></text>
+            </svg>
+        </div>
+        <div class="item-card">
+            <svg x="958" y="5" width="180" height="190" class="svg-card"> 
+                <rect class="svg-card-rect" width="130" height="190" rx="10" ry="10"/>
+                <ellipse cx="65" cy="50" rx="30" ry="37" fill="red"/>
+                <path fill="none" stroke="#333333" stroke-width="1" d="M65,87 Q45,107 65,127 T65,167"></path>
+                <text x="15" y="130" font-size="100"></text>
+            </svg>
+        </div>    
+    </main>
+    
+    <footer>
+        <div class="cardCaption">A</div>
+        <div class="cardCaption">B</div>
+        <div class="cardCaption">C</div>
+        <div class="cardCaption">D</div>
+        <div class="cardCaption">E</div>
+        <div class="cardCaption">F</div>
+        <div class="cardCaption">G</div>
+        <div class="cardCaption">H</div>
+    </footer>
+</div>
+
+
+<audio class="fail">
+    <source src="assets/sounds/fail.mp3" type="audio/mp3" />
+</audio>
+<audio class="success">
+    <source src="assets/sounds/success.mp3" type="audio/mp3" />
+</audio>
+
+<script src="js/gameView.js"></script>
+<script src="js/gameModel.js"></script>
+<script src="js/gameController.js"></script>
+</body>
+</html>

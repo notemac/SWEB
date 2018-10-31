@@ -1,0 +1,78 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    background: url("../img/sky.png")
+}
+
+p {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    width: 1000px;
+    margin: 50px auto;
+    border: 1px #0400ff solid;
+    border-radius: 10px;
+}
+
+/* ФОРМА */
+.form-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 5px;
+}
+
+.form-wrapper input {
+    box-sizing: border-box;
+    padding: 8px;
+    font-size: 16px;
+    margin-bottom: 16px;
+    height: 40px;
+    border-radius: 3px;
+}
+
+.form-wrapper :first-child input {
+    border: 1px #5e5bfa solid;
+    width: 330px;
+}
+
+.form-wrapper :last-child input{
+    border: none;
+    background-color: #2a499e;
+    width: 650px;
+}
+
+.form-wrapper :last-child:hover input  {
+    cursor: pointer;
+    background-color: #0400ff;
+}
+/* ФОРМА */
+
+/* КОНТЕНТ */
+.content {
+    display: flex;
+    justify-content: space-between;
+    margin: 5px;
+}
+
+.map {
+    border-radius: 10px;
+}
+/* КОНТЕНТ */

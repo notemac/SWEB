@@ -1,4 +1,5 @@
 [node_modules] Необходимы модули по умолчанию + prop-types:
+
 npx create-react-app my-app
 cd my-app
 npm install --save prop-types

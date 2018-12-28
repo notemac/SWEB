@@ -1,7 +1,9 @@
 [node_modules] Необходимы модули по умолчанию + prop-types:
 
 npx create-react-app my-app
+
 cd my-app
+
 npm install --save prop-types
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

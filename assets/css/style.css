@@ -1,0 +1,66 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  .header {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    align-items: center;
+    background-color: white;
+    padding: 20px 0;
+  }
+  .header_logo {
+    height: 70px;
+  }
+  .header_name {
+    font-size: 2em;
+  }
+  .btn {
+    font-size: 1.3em;
+    background-color: #2165b3;
+    border: none;
+    padding: 20px;
+    color: white;
+    cursor: pointer;
+  }
+  .main {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  .filter {
+    margin: 0 auto;
+    width: 85%;
+    padding: 20px 10px;
+    display: flex;
+    justify-content: space-around;
+  }
+  .filter_title {
+    font-size: 1.8em;
+  }
+  .filter_route {
+    font-size: 1.2em;
+    padding: 1.5em;
+    border: 1px solid #2165b3;
+  }
+  .city {
+    font-size: 1.3em;
+    border: 1px solid #2165b3;
+    padding: 20px;
+  }
+  .routes {
+    margin: 0 auto;
+    width: 72%;
+    padding: 20px 10px;
+    flex-direction: column;
+  }
+  .route {
+      margin-bottom: 20px;
+  }

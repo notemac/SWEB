@@ -35,6 +35,9 @@
     display: flex;
     flex-direction: column;
   }
+  label {
+    font-size: 1.2em;
+  }
   .filter {
     margin: 0 auto;
     width: 85%;
@@ -57,7 +60,7 @@
   }
   .routes {
     margin: 0 auto;
-    width: 72%;
+    width: 80%;
     padding: 20px 10px;
     flex-direction: column;
   }

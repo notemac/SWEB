@@ -7,24 +7,26 @@
     </head>
     <body>
         <header class="header">
-            <img class="header_logo" src="assets/img/logo2.jpg" alt="Логотип" />
-            <h1 class="header_name" >Расписание</h1>
+            <img class="header_logo" src="assets/img/logo2.jpg" alt="Логотип данного сайта" />
+            <h1 class="header_name">Расписание маршрутов</h1>
             <button id="visually" class="btn">
                 Версия для слабовидящих
             </button>
         </header>
 
-        <main class="main">         
-            <div class="filter">
+        <main class="main" role="main">         
+            <div class="filter" aria-controls="routes-region">
                 <fieldset class="filter_route">
                     <legend class="filter_title">Поиск маршрутов</legend>
-                    <input id="from" class="city" type="text" placeholder="Откуда"/>
-                    <input id="to" class="city" type="text" placeholder="Куда"/>
+                    <label id="lfrom">Откуда</label>
+                    <input id="from" class="city" type="text" placeholder="Откуда" aria-labelledby="lfrom"/>
+                    <label id="lto">Куда</label>
+                    <input id="to" class="city" type="text" placeholder="Куда" aria-labelledby="lto"/>
                     <button id="search" class="btn"> Найти маршрут </button>
                 </fieldset>
             </div>
 
-            <div class="routes">             
+            <div class="routes" role="region" id="routes-region" aria-live="polite">             
             </div>
         </main>
 
